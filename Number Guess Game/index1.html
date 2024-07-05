@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game | Main</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h1>Number Guess Game</h1>
+    </div>
+
+    <div id="start-btn">
+        <button onclick="redirect()">START</button>
+    </div>
+
+    
+
+    <style>
+        body{
+            background-color: yellowgreen;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1{
+            color: linear-gradient(to bottom right, #ff33cc 0%, #ffff00 100%);
+            font-family: "Ga Maamli", sans-serif;
+            font-size: 60px;
+            font-weight: 500;
+        }
+
+        button{
+            background-color: rgb(245, 233, 72);
+            color: rgb(15, 14, 14);
+            border-radius: 5px;
+            font-family: "Anton SC", sans-serif;
+            border: none;
+            padding: 15px 40px;
+            font-size: 30px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            box-shadow: 2px 2px 2px 2px #0c0b0b;
+
+        }
+    </style>
+
+    <script>
+
+        function redirect() {
+            document.getElementById("start-btn").onclick = function () {
+        location.href = "index.html";
+    };
+        }
+
+
+    </script>
+</body>
+</html>
