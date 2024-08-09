@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game | Main</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h1>Number Guess Game</h1>
+    </div>
+
+    <div id="start-btn">
+        <button onclick="redirect()">START</button>
+    </div>
+
+    
+
+    <style>
+        body{
+            background-image: url(/images/desert-7970677_1920.jpg);
+             background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            width: 100%;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1{
+            /* color: url(OIP.jfif); */
+            font-family: "Ga Maamli", sans-serif;
+            font-size: 100px;
+            font-weight: 600;
+            text-shadow: 3px 3px 6px lightgrey;
+            text-align: center;
+        }
+
+        h1:hover{
+            cursor: pointer;
+        }
+
+        button{
+            background-color: rgb(245, 233, 72);
+            color: rgb(15, 14, 14);
+            border-radius: 50px;
+            font-family: "Anton SC", sans-serif;
+            border: none;
+            padding: 15px 40px;
+            font-size: 40px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            box-shadow: 5px 5px 5px 5px #474545;
+
+        }
+    </style>
+
+    <script>
+
+        function redirect() {
+            document.getElementById("start-btn").onclick = function () {
+            location.href = "main.html";
+    };
+        }
+
+
+    </script>
+</body>
+</html>
