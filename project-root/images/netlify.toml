@@ -1,0 +1,35 @@
+# netlify.toml
+
+[build]
+  publish = "."
+
+# Redirect from index.html to main.html when clicking start button
+[[redirects]]
+  from = "/index.html"
+  to = "/main.html"
+  status = 302
+
+# Redirect any old page that might exist to the index.html
+[[redirects]]
+  from = "/old-page"
+  to = "/index.html"
+  status = 301
+
+# Redirect wildcard pattern from old to new folder structure
+[[redirects]]
+  from = "/old-directory/*"
+  to = "/new-directory/:splat"
+  status = 301
+
+# Redirect specific page to an external URL
+[[redirects]]
+  from = "/external"
+  to = "https://www.external-website.com"
+  status = 302
+
+# Redirect HTTP to HTTPS
+[[redirects]]
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
